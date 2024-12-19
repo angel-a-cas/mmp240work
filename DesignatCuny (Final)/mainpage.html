@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design @ CUNY (Angel)</title>
+    <link href="reset.css" rel="stylesheet" type="text/css" media="all">
+    <link href="mainpage.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="showMenu.js"></script>
+</head>
+<body>
+    <header>
+        <!-- title/logo with font styling, nav bar with the little menu icon (for mobile), search bar -->
+        <h1>Design @ CUNY</h1>
+        <button class="show-menu" onclick="showMenu()">
+            <span class="material-symbols-outlined">menu_open</span>
+        </button>
+        <nav id="topMenu">
+            <ul>
+                <li><a href="https://www.cuny.edu/about/">About CUNY</a></li>
+                <li><a href="https://www.cuny.edu/financial-aid/">Financial Aid</a></li>
+                <li><a href="https://www.cuny.edu/admissions/learnmore">Apply</a></li>
+            </ul>
+            <form class="search" action="#">
+                <input type="search" placeholder="What's happening?">
+                <button>Search</button>
+            </form>
+        </nav>
+    </header>
+
+
+    <div class="searchPrograms">
+        <h2>Find your program</h2>
+        <p>Search by:</p>
+        <nav class="programNav">
+            <ul class="topList">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" onclick="toggleDropdown('degreeDropdown')">Degree</a>
+                    <ul class="dropdown-content" id="degreeDropdown">
+                        <li><a href="associate.html">Associate</a></li>
+                        <li><a href="bachelor.html">Bachelor</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="javascript:void(0);" onclick="toggleDropdown('boroughDropdown')">Borough</a>
+                    <ul class="dropdown-content" id="boroughDropdown">
+                        <li><a href="brooklyn.html">Brooklyn</a></li>
+                        <li><a href="bronx.html">Bronx</a></li>
+                        <li><a href="manhattan.html">Manhattan</a></li>
+                        <li><a href="queens.html">Queens</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    
+
+    <main class="home">
+        <h2>Degrees Offered at CUNY</h2>
+        <div class="degree-container">
+            <div class="degree-card">
+                <h3>Associate Degree</h3>
+                <p>Start your education with an associate degree in various fields.</p>
+            </div>
+            <div class="degree-card">
+                <h3>Bachelor's Degree</h3>
+                <p>Complete your education with a bachelor's degree in your chosen discipline.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 City University of New York</p>
+    </footer>
+</body>
+</html>
